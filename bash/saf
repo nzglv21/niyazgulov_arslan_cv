@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <unistd.h>
+#include <stdlib.h>
+
+int cd(char *argv[]) {
+    if (argv==NULL)
+        return 0;
+    
+    if (chdir(argv[1]) != 0)
+        fprintf(stdout,"Не существует такой дирректории.\n");
+
+    return 0;
+}
