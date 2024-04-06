@@ -12,9 +12,9 @@ from aiogram.utils.exceptions import (MessageToEditNotFound, MessageCantBeEdited
 
 
 
-TOKEN='6846866593:AAE0rTgXwtHswMigPntIWq4-OkS8QpaM3f4'
-CHANEL_ID = "-1002012883717"
-ORDERS_ID = "-1002010880352"
+TOKEN=''
+CHANEL_ID = ""
+ORDERS_ID = ""
 bot = Bot(TOKEN)
 dp = Dispatcher(bot, storage=MemoryStorage())
 
