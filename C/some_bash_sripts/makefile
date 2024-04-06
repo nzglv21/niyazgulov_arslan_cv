@@ -22,6 +22,9 @@ wc.o : wc/wc.c
 task: main.o cat.o cp.o echo.o ls.o pwd.o wc.o
 	gcc main.o cat.o cp.o echo.o ls.o pwd.o wc.o -o exec
 
+clean:
+	rm *.o exec
+
 
 
 
