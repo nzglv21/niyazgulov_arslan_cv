@@ -1,0 +1,29 @@
+print('0 в качестве знака операции завершит работу программы')
+res = 0
+while true:
+    print('Знак (+, -, *, /): ')
+    s = input()
+    if s == '0':
+        break
+    if s == '+' or s == '-' or s == '*' or s == '/':
+        print("a=")
+        a = int(input())
+        print("b=")
+        b = int(input())
+        if s == '+':
+            res = a + b
+            print(res)
+        elif s == '-':
+            res = a - b
+            print(res)
+        elif s == '*':
+            res = a *b
+            print(res)
+        elif s == '/':
+            if b != 0:
+                res = a / b
+                print(res)
+            else:
+                print('Деление на ноль!')
+    else:
+        print('Неверный знак операции!')
